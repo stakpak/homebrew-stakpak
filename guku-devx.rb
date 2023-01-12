@@ -5,20 +5,20 @@
 class GukuDevx < Formula
   desc ""
   homepage "https://devx.guku.io/"
-  version "0.2.60"
+  version "0.2.61"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.60/guku-devx_0.2.60_Darwin_arm64.tar.gz"
-      sha256 "842e0deff4478d6c9c132cfeabe88670268526700d0bb7e0e821e2927f1afe3c"
+    if Hardware::CPU.intel?
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.61/guku-devx_0.2.61_Darwin_x86_64.tar.gz"
+      sha256 "4c6edcea65bfcd84b92035a1a1679819e9b0c15ad0bd1abbe5bd4902ca4b109e"
 
       def install
         bin.install "devx"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.60/guku-devx_0.2.60_Darwin_x86_64.tar.gz"
-      sha256 "48aa7815799164e153eef1da2346d648a9b19ded52e2295192dd3a12d29f228c"
+    if Hardware::CPU.arm?
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.61/guku-devx_0.2.61_Darwin_arm64.tar.gz"
+      sha256 "4fd3c46ce19ca0b7a72746f567e74e015ee286e5bffd638fe49019f5f718e907"
 
       def install
         bin.install "devx"
@@ -28,16 +28,16 @@ class GukuDevx < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.60/guku-devx_0.2.60_Linux_x86_64.tar.gz"
-      sha256 "f0438ac22912d061c812f1749b0093f00e1fd83734fe9b0c86d675be6f7ed41b"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.61/guku-devx_0.2.61_Linux_x86_64.tar.gz"
+      sha256 "913a653eccecea106d3ec8068730425d43a84226123d48083612bdd57095d021"
 
       def install
         bin.install "devx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.60/guku-devx_0.2.60_Linux_arm64.tar.gz"
-      sha256 "51f659337dc56b6d9a749219a7db4d6816957b5d79871e0023757135942db7c4"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.61/guku-devx_0.2.61_Linux_arm64.tar.gz"
+      sha256 "79cb4e3cff6ccdc46febf71c8849c581b2c7c165bf515993cfd93bd944367b7d"
 
       def install
         bin.install "devx"
