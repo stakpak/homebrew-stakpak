@@ -5,20 +5,20 @@
 class GukuDevx < Formula
   desc ""
   homepage "https://devx.guku.io/"
-  version "0.2.63"
+  version "0.2.64"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.63/guku-devx_0.2.63_Darwin_x86_64.tar.gz"
-      sha256 "c1c17e2e610bbb1f8377c42cb86dc9212e556c11514a6978d5441f70a370bb37"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.64/guku-devx_0.2.64_Darwin_x86_64.tar.gz"
+      sha256 "ac62ad7ff822aa3ed75d35b9053845c979b4deaa458ed94a6cf1ae43c0f7acad"
 
       def install
         bin.install "devx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.63/guku-devx_0.2.63_Darwin_arm64.tar.gz"
-      sha256 "69d216f1cebde026076526953298488400d889f4739743ee7d26b0ee08f7c79d"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.64/guku-devx_0.2.64_Darwin_arm64.tar.gz"
+      sha256 "cd996682527810a3b4e8b4196d2a32e2fca582b8e3f3d830ad992a212421f5dc"
 
       def install
         bin.install "devx"
@@ -28,16 +28,16 @@ class GukuDevx < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.63/guku-devx_0.2.63_Linux_arm64.tar.gz"
-      sha256 "c6e9a8a26ad663109369a8b27f66ccca7662b57978a7d749472d8e04c71965b6"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.64/guku-devx_0.2.64_Linux_arm64.tar.gz"
+      sha256 "a3ed38c3fc2467da5babf288879476da38e12692b629ace6d5e4d9c3d420944d"
 
       def install
         bin.install "devx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.63/guku-devx_0.2.63_Linux_x86_64.tar.gz"
-      sha256 "02089212e554ba3a7955d2d4ef453a6b31e0943d87a2a3269a91c7054353a6ce"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.2.64/guku-devx_0.2.64_Linux_x86_64.tar.gz"
+      sha256 "32ae0151d2b9f46fded2a86b91e0b83da03dec6402949327d7fc8831aa6c96e9"
 
       def install
         bin.install "devx"
