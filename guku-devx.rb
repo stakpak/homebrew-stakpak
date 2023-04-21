@@ -5,20 +5,20 @@
 class GukuDevx < Formula
   desc ""
   homepage "https://devx.guku.io/"
-  version "0.3.27"
+  version "0.3.28"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.3.27/guku-devx_Darwin_arm64.tar.gz"
-      sha256 "3e8a919e77e0deb6f4d940f0bac72d23264b50ba72ba172d3a7af4f4eeae7814"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.3.28/guku-devx_Darwin_arm64.tar.gz"
+      sha256 "35ffe894f0f9b5da6d68a2839205ca39ca687e13e9c94dd4f3854b80b6d78731"
 
       def install
         bin.install "devx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.3.27/guku-devx_Darwin_x86_64.tar.gz"
-      sha256 "fa00a105e90a6c0c1c163411eed123fa92e301c2e249185b1440f05a1f34c029"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.3.28/guku-devx_Darwin_x86_64.tar.gz"
+      sha256 "94f037c1af87197ece1ddc35504836b701399a0b8b09175440416621e3e95c84"
 
       def install
         bin.install "devx"
@@ -27,17 +27,17 @@ class GukuDevx < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.3.27/guku-devx_Linux_x86_64.tar.gz"
-      sha256 "e45ab4f5f5eba3db35fffee8394295e09db33715ea81cae40e9435ba299f79df"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.3.28/guku-devx_Linux_arm64.tar.gz"
+      sha256 "94b6ee341613f46f0a56e7db29ffd130aeecdb87fc6060fd4792fdd08df61a20"
 
       def install
         bin.install "devx"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.3.27/guku-devx_Linux_arm64.tar.gz"
-      sha256 "90859988990dfa66299677cfc182506329fe799b7d8a089c0f50a2a5fb82d052"
+    if Hardware::CPU.intel?
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.3.28/guku-devx_Linux_x86_64.tar.gz"
+      sha256 "9c6ffc011dc656974956a4f732b71b10459896496aa4dd53ab9f9c5341deef2a"
 
       def install
         bin.install "devx"
