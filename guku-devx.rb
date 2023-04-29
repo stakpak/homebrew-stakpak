@@ -5,20 +5,20 @@
 class GukuDevx < Formula
   desc ""
   homepage "https://devx.guku.io/"
-  version "0.4.9"
+  version "0.4.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.9/guku-devx_Darwin_x86_64.tar.gz"
-      sha256 "ad296ad9c6ebf05e94383a5d32fdf76d3cf3df0036bc6474d810fd8e687ba4d1"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.10/guku-devx_Darwin_x86_64.tar.gz"
+      sha256 "c9ad6747bf2486af04c7032aaee5dec42e17bec0d9d854b032e9024869ae730c"
 
       def install
         bin.install "devx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.9/guku-devx_Darwin_arm64.tar.gz"
-      sha256 "f63d8ebeca332703a43eb6ef25759fd6d8e7d338a9591a38e4afe7c46b7265f9"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.10/guku-devx_Darwin_arm64.tar.gz"
+      sha256 "3d2bf3cb060a85032289c41371697fda897ad4c5e7364955d8c8c52611c1feec"
 
       def install
         bin.install "devx"
@@ -28,16 +28,16 @@ class GukuDevx < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.9/guku-devx_Linux_x86_64.tar.gz"
-      sha256 "a4cb922bacd83a638d75021c49dbb83238367967b342e37acac4994dde9f9755"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.10/guku-devx_Linux_x86_64.tar.gz"
+      sha256 "446e65e3dcc6f327182d7d5e7d4a216988c97bab084effead2493e2e6119827c"
 
       def install
         bin.install "devx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.9/guku-devx_Linux_arm64.tar.gz"
-      sha256 "2f852949b96eb51e91ac46586b8c6eac3e97395b20f7ca01c86801ff9ccdb4f9"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.10/guku-devx_Linux_arm64.tar.gz"
+      sha256 "3d61ec27ca6ca3cfe34c4bfd7dfc5c22cb19f4dab0e9778dc31cec0e3de7f977"
 
       def install
         bin.install "devx"
