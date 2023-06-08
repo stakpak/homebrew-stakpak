@@ -5,20 +5,20 @@
 class GukuDevx < Formula
   desc ""
   homepage "https://devx.guku.io/"
-  version "0.4.21"
+  version "0.4.22"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.21/guku-devx_Darwin_x86_64.tar.gz"
-      sha256 "a7121f2365aad4fa3d6816a1d8944df7f9bd8ca7788eda35fb99668741b1df6b"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.22/guku-devx_Darwin_x86_64.tar.gz"
+      sha256 "b41356600b81d67bf3b296b2205fad0b6cb6911a03cc92dde691be23ad4a3494"
 
       def install
         bin.install "devx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.21/guku-devx_Darwin_arm64.tar.gz"
-      sha256 "627439f980f7e0e55b9a4bbe1507caa19b6f4c13e562d5435c4de17fa25ee269"
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.22/guku-devx_Darwin_arm64.tar.gz"
+      sha256 "7c9ebf6ef75612ae7e966af993f416deaa1ab42b111988979d5e6b3e50f7749c"
 
       def install
         bin.install "devx"
@@ -27,17 +27,17 @@ class GukuDevx < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.21/guku-devx_Linux_arm64.tar.gz"
-      sha256 "ca11e074ce0d10e51d9aafc7f2ae549782eefb735d96bf2963a5b161688cc6c8"
+    if Hardware::CPU.intel?
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.22/guku-devx_Linux_x86_64.tar.gz"
+      sha256 "2ec16fdcd767dcb4f787ec911cbd1d526f28dbe9ef57b8584aff0efab94f02f8"
 
       def install
         bin.install "devx"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.21/guku-devx_Linux_x86_64.tar.gz"
-      sha256 "8fb413131ade8c560bfd3df436f900c1de337e63a38e1f2c0ac1e0fbe16b97e0"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/devopzilla/guku-devx/releases/download/v0.4.22/guku-devx_Linux_arm64.tar.gz"
+      sha256 "3cc20f01d3c390e033403ed75b8c9e4c5bfacd59518292dfc6ae20ba23ae8b2d"
 
       def install
         bin.install "devx"
