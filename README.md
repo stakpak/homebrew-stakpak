@@ -1,1 +1,1 @@
-# homebrew-guku-devx
+# Stakpak Homebrew Tap
