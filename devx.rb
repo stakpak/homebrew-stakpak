@@ -5,20 +5,20 @@
 class Devx < Formula
   desc ""
   homepage "https://devx.stakpak.dev/"
-  version "0.4.27"
+  version "0.4.28"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/devx/releases/download/v0.4.27/devx_Darwin_x86_64.tar.gz"
-      sha256 "755c4e51317d1883555118e578848e42ee0daf680adb19aae2eea7854048c99e"
+    if Hardware::CPU.arm?
+      url "https://github.com/devopzilla/devx/releases/download/v0.4.28/devx_Darwin_arm64.tar.gz"
+      sha256 "dec5b6dd4e2d383270456ae855f0586e38b5b83829a3306123ddf9775ea28877"
 
       def install
         bin.install "devx"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/devopzilla/devx/releases/download/v0.4.27/devx_Darwin_arm64.tar.gz"
-      sha256 "fc850040afb4395bc0fa077cb7dc15d304ac168dd73def8343502a3be0253efa"
+    if Hardware::CPU.intel?
+      url "https://github.com/devopzilla/devx/releases/download/v0.4.28/devx_Darwin_x86_64.tar.gz"
+      sha256 "df6e5938d67160717e9011cdeb9da2db34ba61ef87e831a5bad9e1642465143a"
 
       def install
         bin.install "devx"
@@ -28,16 +28,16 @@ class Devx < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devopzilla/devx/releases/download/v0.4.27/devx_Linux_arm64.tar.gz"
-      sha256 "b0ecbb67c3b11bb40d22edbb51e0ec78c98ab426a03af7a9ed07963cccb70918"
+      url "https://github.com/devopzilla/devx/releases/download/v0.4.28/devx_Linux_arm64.tar.gz"
+      sha256 "acc151bb98a2084c9de1c6807efcd2b7460c92779ba5a0fe12409201b70f199f"
 
       def install
         bin.install "devx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/devx/releases/download/v0.4.27/devx_Linux_x86_64.tar.gz"
-      sha256 "8052a084269ed917a159c5272db31cd1ea116d8d15370aaf14fd3d30b244dc5b"
+      url "https://github.com/devopzilla/devx/releases/download/v0.4.28/devx_Linux_x86_64.tar.gz"
+      sha256 "5ac6913f12a39a21bd147fb700de99085e60c44bb3fbf7e955376c776892ee02"
 
       def install
         bin.install "devx"
