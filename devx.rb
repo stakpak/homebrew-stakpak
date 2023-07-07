@@ -5,20 +5,20 @@
 class Devx < Formula
   desc ""
   homepage "https://devx.stakpak.dev/"
-  version "0.4.28"
+  version "0.4.29"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/devopzilla/devx/releases/download/v0.4.28/devx_Darwin_arm64.tar.gz"
-      sha256 "dec5b6dd4e2d383270456ae855f0586e38b5b83829a3306123ddf9775ea28877"
+    if Hardware::CPU.intel?
+      url "https://github.com/stakpak/devx/releases/download/v0.4.29/devx_Darwin_x86_64.tar.gz"
+      sha256 "ca167d308007de1bcd0dd89be5408e2479690c4e81a5c545073b0e3ceea4e696"
 
       def install
         bin.install "devx"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/devx/releases/download/v0.4.28/devx_Darwin_x86_64.tar.gz"
-      sha256 "df6e5938d67160717e9011cdeb9da2db34ba61ef87e831a5bad9e1642465143a"
+    if Hardware::CPU.arm?
+      url "https://github.com/stakpak/devx/releases/download/v0.4.29/devx_Darwin_arm64.tar.gz"
+      sha256 "b84b7447da504123a5af3d83540c019ea164dfb26038a09770a64d8d43f52cb9"
 
       def install
         bin.install "devx"
@@ -28,16 +28,16 @@ class Devx < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devopzilla/devx/releases/download/v0.4.28/devx_Linux_arm64.tar.gz"
-      sha256 "acc151bb98a2084c9de1c6807efcd2b7460c92779ba5a0fe12409201b70f199f"
+      url "https://github.com/stakpak/devx/releases/download/v0.4.29/devx_Linux_arm64.tar.gz"
+      sha256 "8735702922a780cfd8cd8ac19d80a293a249091bc6ea7d8ebda1b7da970b1b59"
 
       def install
         bin.install "devx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/devopzilla/devx/releases/download/v0.4.28/devx_Linux_x86_64.tar.gz"
-      sha256 "5ac6913f12a39a21bd147fb700de99085e60c44bb3fbf7e955376c776892ee02"
+      url "https://github.com/stakpak/devx/releases/download/v0.4.29/devx_Linux_x86_64.tar.gz"
+      sha256 "22036ff2a2dd7cf5fecf6f47f52027a99ef5b8484b0b981405ed89aa9bf4ab9b"
 
       def install
         bin.install "devx"
