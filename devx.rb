@@ -5,20 +5,20 @@
 class Devx < Formula
   desc ""
   homepage "https://devx.stakpak.dev/"
-  version "0.4.35"
+  version "0.4.36"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/stakpak/devx/releases/download/v0.4.35/devx_Darwin_arm64.tar.gz"
-      sha256 "3d09b558fcb3fed08996927ea13ffe272505263bf519039ca32a12d8f6420974"
+    if Hardware::CPU.intel?
+      url "https://github.com/stakpak/devx/releases/download/v0.4.36/devx_Darwin_x86_64.tar.gz"
+      sha256 "2dc19be5667622554e4f79f0d35950523de4ee4fa783811cfca1627a925f4a05"
 
       def install
         bin.install "devx"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/stakpak/devx/releases/download/v0.4.35/devx_Darwin_x86_64.tar.gz"
-      sha256 "5dacf16242fa22a39d973e61b6db2d09197665aa9fbeeab9b57039d0179deb65"
+    if Hardware::CPU.arm?
+      url "https://github.com/stakpak/devx/releases/download/v0.4.36/devx_Darwin_arm64.tar.gz"
+      sha256 "1dfdfc3b1b58dcd4f807d0b593661d44c2e84474d1fc4713ce7497bfe0f2c216"
 
       def install
         bin.install "devx"
@@ -28,16 +28,16 @@ class Devx < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stakpak/devx/releases/download/v0.4.35/devx_Linux_arm64.tar.gz"
-      sha256 "0be5e9ceb32c49d495e7e667cb3e0c18fe59fb7c57297e710dd7b250320541b6"
+      url "https://github.com/stakpak/devx/releases/download/v0.4.36/devx_Linux_arm64.tar.gz"
+      sha256 "ed722dbfec6809ab211b00603c4f2cac8ef746563884ce411c445304441bfc6c"
 
       def install
         bin.install "devx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stakpak/devx/releases/download/v0.4.35/devx_Linux_x86_64.tar.gz"
-      sha256 "00221291f676bc1165f10df12a9259bdb4c946c01c1b9de3162b2128636174e8"
+      url "https://github.com/stakpak/devx/releases/download/v0.4.36/devx_Linux_x86_64.tar.gz"
+      sha256 "941a276165f00fec15e085ce4ea10e8890c6b5d3b40f537e21061d581f979921"
 
       def install
         bin.install "devx"
