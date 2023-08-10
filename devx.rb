@@ -5,20 +5,20 @@
 class Devx < Formula
   desc ""
   homepage "https://devx.stakpak.dev/"
-  version "0.4.36"
+  version "0.4.37"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stakpak/devx/releases/download/v0.4.36/devx_Darwin_x86_64.tar.gz"
-      sha256 "2dc19be5667622554e4f79f0d35950523de4ee4fa783811cfca1627a925f4a05"
+      url "https://github.com/stakpak/devx/releases/download/v0.4.37/devx_Darwin_x86_64.tar.gz"
+      sha256 "171ccce97576046975afd01cbe74511f3ad17daa6a850c4e398577e79ab9f0ee"
 
       def install
         bin.install "devx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stakpak/devx/releases/download/v0.4.36/devx_Darwin_arm64.tar.gz"
-      sha256 "1dfdfc3b1b58dcd4f807d0b593661d44c2e84474d1fc4713ce7497bfe0f2c216"
+      url "https://github.com/stakpak/devx/releases/download/v0.4.37/devx_Darwin_arm64.tar.gz"
+      sha256 "79e5f1e95ec665f8774c578d7d60542f5968c24d6f68d9a24ed0c1f65511db8f"
 
       def install
         bin.install "devx"
@@ -28,16 +28,16 @@ class Devx < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stakpak/devx/releases/download/v0.4.36/devx_Linux_arm64.tar.gz"
-      sha256 "ed722dbfec6809ab211b00603c4f2cac8ef746563884ce411c445304441bfc6c"
+      url "https://github.com/stakpak/devx/releases/download/v0.4.37/devx_Linux_arm64.tar.gz"
+      sha256 "380cc3945c558ab2b121417f1ab378913a97e4d73d356631e53ce1cd4b6ee885"
 
       def install
         bin.install "devx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stakpak/devx/releases/download/v0.4.36/devx_Linux_x86_64.tar.gz"
-      sha256 "941a276165f00fec15e085ce4ea10e8890c6b5d3b40f537e21061d581f979921"
+      url "https://github.com/stakpak/devx/releases/download/v0.4.37/devx_Linux_x86_64.tar.gz"
+      sha256 "2d14ef5e6b4fe9e988a17ee058d29596ecaf9bc1a8baa6ea5c97533d2c19344d"
 
       def install
         bin.install "devx"
