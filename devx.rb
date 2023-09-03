@@ -5,20 +5,20 @@
 class Devx < Formula
   desc ""
   homepage "https://devx.stakpak.dev/"
-  version "0.4.38"
+  version "0.4.39"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/stakpak/devx/releases/download/v0.4.38/devx_Darwin_arm64.tar.gz"
-      sha256 "d328e49fe9cba829a2817d9539aed9bba7f9417b92350d06accd175c7e4647f5"
+    if Hardware::CPU.intel?
+      url "https://github.com/stakpak/devx/releases/download/v0.4.39/devx_Darwin_x86_64.tar.gz"
+      sha256 "0a475c64bfeb9b9477b7bc028f4b05b91dc493566a4987244151187ee5f79965"
 
       def install
         bin.install "devx"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/stakpak/devx/releases/download/v0.4.38/devx_Darwin_x86_64.tar.gz"
-      sha256 "b0fd1da9736a8110d22e58e7cc511afc1bd970838891038caefaf440a699efe4"
+    if Hardware::CPU.arm?
+      url "https://github.com/stakpak/devx/releases/download/v0.4.39/devx_Darwin_arm64.tar.gz"
+      sha256 "42e8fb3b6de8eff45147abb6c8cec06493b44a48c98101ac019f353f27cff8ee"
 
       def install
         bin.install "devx"
@@ -27,17 +27,17 @@ class Devx < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stakpak/devx/releases/download/v0.4.38/devx_Linux_arm64.tar.gz"
-      sha256 "d99e53355b3d509d0c9dc4011634e92eaf244df001fb3a4cb7a4f558e1f2eeef"
+    if Hardware::CPU.intel?
+      url "https://github.com/stakpak/devx/releases/download/v0.4.39/devx_Linux_x86_64.tar.gz"
+      sha256 "1e41446a222422b0625b187a23fad8f08b137500d69855c56a64b4f20dc6da19"
 
       def install
         bin.install "devx"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/stakpak/devx/releases/download/v0.4.38/devx_Linux_x86_64.tar.gz"
-      sha256 "3e38398402667a34ca51463b6e42d8da0463f4f5b72a5447deae8e5942a20e24"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/stakpak/devx/releases/download/v0.4.39/devx_Linux_arm64.tar.gz"
+      sha256 "b9a11b54b3ed854c7ca58ad595cb05e23d8fb385cb93117da2ce97d844a17892"
 
       def install
         bin.install "devx"
