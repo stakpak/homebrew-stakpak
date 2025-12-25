@@ -1,25 +1,25 @@
 class Paks < Formula
   desc "Paks CLI tool"
   homepage "https://github.com/stakpak/paks"
-  version "0.1.6"
+  version "0.1.7"
   
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/stakpak/paks/releases/download/v0.1.6/paks-darwin-aarch64.tar.gz"
-      sha256 "54f3da4136aa8397b0ec2fdc63d25de32f556c609edb44a9cfbb1b886e059ca5"
+      url "https://github.com/stakpak/paks/releases/download/v0.1.7/paks-darwin-aarch64.tar.gz"
+      sha256 "06e16754c54add155a6c10b4eee5b7e9953e385a51198d677e32a431d4aa786f"
     else
-      url "https://github.com/stakpak/paks/releases/download/v0.1.6/paks-darwin-x86_64.tar.gz"
-      sha256 "eedb91743ba7a9ff114aa87edb7cec3a15e5359c88ed3f4f08e32142216ff3f5"
+      url "https://github.com/stakpak/paks/releases/download/v0.1.7/paks-darwin-x86_64.tar.gz"
+      sha256 "4fd352f91f5e4d5ce203633bd020efd9156e830695b24e5f9acb9b3cea97a855"
     end
   end
   
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/stakpak/paks/releases/download/v0.1.6/paks-linux-aarch64.tar.gz"
-      sha256 "7dee7c57900bdcf79135379c7c93029c126c8d9635a29a00006b7119d3ab110b"
+      url "https://github.com/stakpak/paks/releases/download/v0.1.7/paks-linux-aarch64.tar.gz"
+      sha256 "10dc260ad003031ceaf9168107a3e67bb3b8acb6f0a02ef6c8bf8c5528d56786"
     else
-      url "https://github.com/stakpak/paks/releases/download/v0.1.6/paks-linux-x86_64.tar.gz"
-      sha256 "52ed2439a0c40e3f35c51f37744591071f27619bfee1cfc0bb68a4de99a47305"
+      url "https://github.com/stakpak/paks/releases/download/v0.1.7/paks-linux-x86_64.tar.gz"
+      sha256 "3d48d2536e4c3ae1d6cbb17776cfc7d1d9a7aebb21cd6fefe7cd71d193d7c1c2"
     end
   end
   
