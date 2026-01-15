@@ -7,20 +7,20 @@ class AgentBoard < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/stakpak/agent-board/releases/download/v0.1.5/agent-board-darwin-aarch64.tar.gz"
-      sha256 "577cdf2d9b2e388a868364484b5feded09edd30e2cf27522da9e46b532b9e207"
+      sha256 "7ad72c927beba85b7cd6457d4fb80d513be99013c62b649bdccc27371dc79852"
     else
       url "https://github.com/stakpak/agent-board/releases/download/v0.1.5/agent-board-darwin-x86_64.tar.gz"
-      sha256 "886e94cc5f315370c073fb110fe5861d9fc7abcd37b321e94cb9ed2ed8e6a14f"
+      sha256 "dbf82fdd9a30a483a7605604fbe339143c303915431eaa44a7d0e8b88094f025"
     end
   end
   
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/stakpak/agent-board/releases/download/v0.1.5/agent-board-linux-aarch64.tar.gz"
-      sha256 "1f2d5945a2f3e5353ef56c4c74e243d0613812e491403c2275da93c20ba7f5f1"
+      sha256 "9ab5f52801f523d4b2d793c1d59762f08d1e736f569b65176cf9dffcd92517fe"
     else
       url "https://github.com/stakpak/agent-board/releases/download/v0.1.5/agent-board-linux-x86_64.tar.gz"
-      sha256 "4bf88acb023d6ba51eeed14d3bcb55cd1a9677460fbe4439da05f79e780fcbc8"
+      sha256 "cc3f56b042105510104167d282257f47980ede40101ce613bbe76d08bc32445f"
     end
   end
   
