@@ -1,26 +1,26 @@
 class AgentBoard < Formula
   desc "Task management CLI for AI agents and humans"
   homepage "https://github.com/stakpak/agent-board"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
   
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/stakpak/agent-board/releases/download/v0.1.2/agent-board-darwin-aarch64.tar.gz"
-      sha256 "12363bfdef33f7a8fc9928a0991b84d5df8345c660b15f15ea48286009b52f77"
+      url "https://github.com/stakpak/agent-board/releases/download/v0.1.3/agent-board-darwin-aarch64.tar.gz"
+      sha256 "b07f623911dd4af31953b8fcc3fa26ed84b3e6bfc6bf9ab763872ccbc6b30834"
     else
-      url "https://github.com/stakpak/agent-board/releases/download/v0.1.2/agent-board-darwin-x86_64.tar.gz"
-      sha256 "407e4c2c233fa70a696dd368d9fb662773234b279a3595f2fc56431e0312b217"
+      url "https://github.com/stakpak/agent-board/releases/download/v0.1.3/agent-board-darwin-x86_64.tar.gz"
+      sha256 "0dfe673e08033bc58212febb5c3d5c3db93a564d8a84996509b3da77770c0696"
     end
   end
   
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/stakpak/agent-board/releases/download/v0.1.2/agent-board-linux-aarch64.tar.gz"
-      sha256 "dae42b2ba957601a91da6e90e3f7b8d01bbf11f2ae17c5b3b3e83cd93441ee5c"
+      url "https://github.com/stakpak/agent-board/releases/download/v0.1.3/agent-board-linux-aarch64.tar.gz"
+      sha256 "8f7a712063725b71f41d2b7b6d0f849cdb6fd354826163df766c465c9b94e095"
     else
-      url "https://github.com/stakpak/agent-board/releases/download/v0.1.2/agent-board-linux-x86_64.tar.gz"
-      sha256 "621f415a75705f82b810bd825e748acb8f6401dbdb5082289ad169407ed9dabc"
+      url "https://github.com/stakpak/agent-board/releases/download/v0.1.3/agent-board-linux-x86_64.tar.gz"
+      sha256 "8a004afd57f214a3564f69de4fdda5147f67673b1b2fb1e1d8d08aa884bc24a4"
     end
   end
   
