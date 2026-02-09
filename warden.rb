@@ -1,21 +1,21 @@
 class Warden < Formula
   desc "Warden CLI tool"
   homepage "https://github.com/stakpak/warden"
-  version "0.1.14"
+  version "0.1.15"
   
   on_macos do
     if Hardware::CPU.arm?
-      url "https://warden-cli-releases.s3.amazonaws.com/v0.1.14/warden-darwin-aarch64.tar.gz"
-      sha256 "af6efbfe37707466f79798f1d166a8747480f7df0c95651147b7343274769b5e"
+      url "https://warden-cli-releases.s3.amazonaws.com/v0.1.15/warden-darwin-aarch64.tar.gz"
+      sha256 "dc48e68a36e5bc7812d2dad57f9cc886ae8418451de940453eb272a48cb277f5"
     else
-      url "https://warden-cli-releases.s3.amazonaws.com/v0.1.14/warden-darwin-x86_64.tar.gz"
-      sha256 "f6cc8bbe7a136fe813dbe44599d75c9a73c816e750d358d86adc1f21cb707d4c"
+      url "https://warden-cli-releases.s3.amazonaws.com/v0.1.15/warden-darwin-x86_64.tar.gz"
+      sha256 "c6add65cf44fa2b716c2c5613530f9e748fff5a7210d1b215b6ef30bff298d76"
     end
   end
   
   on_linux do
-    url "https://warden-cli-releases.s3.amazonaws.com/v0.1.14/warden-linux-x86_64.tar.gz"
-    sha256 "cbfda767c0b8665b43b49e3dc92b181afdeb98299ad9f16cd975e3f739f890c0"
+    url "https://warden-cli-releases.s3.amazonaws.com/v0.1.15/warden-linux-x86_64.tar.gz"
+    sha256 "19f2dc01559f3324dc7cb2f606dee417dfc939debd575bc86a26dc303b5cff29"
   end
   
   def install
