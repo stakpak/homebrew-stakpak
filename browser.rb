@@ -1,26 +1,26 @@
 class Browser < Formula
   desc "Browser automation CLI"
   homepage "https://github.com/stakpak/tab"
-  version "0.1.8"
+  version "0.1.9"
   license "MIT"
   
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/stakpak/tab/releases/download/v0.1.8/browser-darwin-aarch64.tar.gz"
-      sha256 "b00a04ec3d6b3d50c90d05880baff0f57817ad2324f06c45ad128de6c441860b"
+      url "https://github.com/stakpak/tab/releases/download/v0.1.9/browser-darwin-aarch64.tar.gz"
+      sha256 "6312280e5a47ee2618aa3fabe3fe54aa6440b6b785ad1cf0623f6859b10bd8bb"
     else
-      url "https://github.com/stakpak/tab/releases/download/v0.1.8/browser-darwin-x86_64.tar.gz"
-      sha256 "860310efe77385e90ec0c957c47818c2bbbb234ea30e67fd074a113c8e4ea720"
+      url "https://github.com/stakpak/tab/releases/download/v0.1.9/browser-darwin-x86_64.tar.gz"
+      sha256 "57271c69cf6b2d3dd3c66a871dc7ee83a811754e7b2c9cb7ecfea5019a288296"
     end
   end
   
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/stakpak/tab/releases/download/v0.1.8/browser-linux-aarch64.tar.gz"
-      sha256 "33e79fbaaad449303348a749410f45f7f8baa97763de1265cc4ba2974cd4241e"
+      url "https://github.com/stakpak/tab/releases/download/v0.1.9/browser-linux-aarch64.tar.gz"
+      sha256 "9be8aaee2d4aee857a030a4e72056b4eb4f84864f1bd6dbfc608cb3a4cdacae9"
     else
-      url "https://github.com/stakpak/tab/releases/download/v0.1.8/browser-linux-x86_64.tar.gz"
-      sha256 "085224fe68d40fbbda76bf72c40d2f6391497dcdb0c778a97defe0acb015514d"
+      url "https://github.com/stakpak/tab/releases/download/v0.1.9/browser-linux-x86_64.tar.gz"
+      sha256 "6c44039a214f02c80d7641100397611e9907fe30f620b2e4cc92e2e49f604442"
     end
   end
   
