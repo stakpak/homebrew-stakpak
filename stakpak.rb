@@ -1,25 +1,25 @@
 class Stakpak < Formula
   desc "Stakpak CLI tool"
   homepage "https://github.com/stakpak/stakpak"
-  version "0.3.47"
+  version "0.3.48"
   
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/stakpak/agent/releases/download/v0.3.47/stakpak-darwin-aarch64.tar.gz"
-      sha256 "111e614a8f08ffa69d491ea9ceb878b0053bfcd7b7dd16e104df01684b76fc6e"
+      url "https://github.com/stakpak/agent/releases/download/v0.3.48/stakpak-darwin-aarch64.tar.gz"
+      sha256 "14b25064527abf9eee8bb5ec2677c5ef3a862be39892b2230e4038b9ed69dbf6"
     else
-      url "https://github.com/stakpak/agent/releases/download/v0.3.47/stakpak-darwin-x86_64.tar.gz"
-      sha256 "ac7138e3899444dd95979ae3eae678a6e3a86205e967a8659f1321267d7ff6f1"
+      url "https://github.com/stakpak/agent/releases/download/v0.3.48/stakpak-darwin-x86_64.tar.gz"
+      sha256 "5faf69ad0bd26d98f4ae0058021d60f1362387f1e22b5f40234a200fae8f93a4"
     end
   end
   
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/stakpak/agent/releases/download/v0.3.47/stakpak-linux-aarch64.tar.gz"
-      sha256 "0c62c23ac11359752cf1ff6ff54f5be370bc06cf85e290535af4ba9415324f3e"
+      url "https://github.com/stakpak/agent/releases/download/v0.3.48/stakpak-linux-aarch64.tar.gz"
+      sha256 "e811620a459cddc483b10f521108bb43f8c446faeb42c1fe72cd076a845e8518"
     else
-      url "https://github.com/stakpak/agent/releases/download/v0.3.47/stakpak-linux-x86_64.tar.gz"
-      sha256 "5ff09271c10aa85791e21058fbf0fbbc37bd4e403a5680bba1410649a78a19a0"
+      url "https://github.com/stakpak/agent/releases/download/v0.3.48/stakpak-linux-x86_64.tar.gz"
+      sha256 "1488be3982c59a060befd72f03fffae5078368e40d28018cf01552166062f232"
     end
   end
   
